@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raisa Ahmed — Content, Brand &amp; Editorial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF3F0; --blush:#F6E4E1; --blush-2:#F1D8D4;
+    --rose:#9B4A60; --rose-deep:#793548; --rose-soft:#C58496;
+    --ink:#2E2A29; --muted:#857371; --line:#E8CDD0;
+    --serif:"Lora",Georgia,serif; --sans:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:var(--sans); color:var(--ink); background:var(--cream); font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+  body::before{ content:""; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.5; background:radial-gradient(60vw 60vw at 82% -8%, rgba(197,132,150,.28), transparent 60%),radial-gradient(50vw 50vw at -10% 12%, rgba(155,74,96,.10), transparent 60%),radial-gradient(55vw 55vw at 110% 88%, rgba(241,216,212,.6), transparent 60%); }
+  body::after{ content:""; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.045; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .wrap{ position:relative; z-index:1; max-width:1120px; margin:0 auto; padding:0 32px; }
+  a{ color:inherit; text-decoration:none; }
+  .eyebrow{ font-size:12.5px; letter-spacing:.28em; text-transform:uppercase; color:var(--rose); font-weight:600; }
+  nav{ position:sticky; top:0; z-index:50; background:rgba(251,243,240,.8); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  .nav-in{ max-width:1120px; margin:0 auto; padding:14px 32px; display:flex; align-items:center; justify-content:space-between; }
+  .mono{ font-family:var(--serif); font-weight:600; font-size:20px; letter-spacing:.04em; color:var(--rose); }
+  .nav-links{ display:flex; gap:24px; }
+  .nav-links a{ font-size:13.5px; letter-spacing:.04em; color:var(--muted); transition:color .25s; }
+  .nav-links a:hover{ color:var(--rose); }
+  @media(max-width:860px){ .nav-links{ display:none; } }
+  header{ padding:clamp(56px,11vh,128px) 0 clamp(40px,6vh,72px); }
+  .hero-eyebrow{ display:flex; gap:14px; align-items:center; margin-bottom:26px; }
+  .hero-eyebrow .dash{ width:42px; height:1.5px; background:var(--rose-soft); }
+  h1{ font-family:var(--serif); font-weight:600; color:var(--ink); font-size:clamp(44px,8.5vw,108px); line-height:.96; letter-spacing:-.015em; }
+  h1 .it{ font-style:italic; color:var(--rose); font-weight:500; }
+  .lede{ margin-top:30px; max-width:640px; font-size:clamp(18px,2.2vw,22px); color:#4a4140; line-height:1.5; }
+  .lede b{ color:var(--ink); font-weight:600; }
+  .hero-cta{ margin-top:38px; display:flex; flex-wrap:wrap; gap:14px; }
+  .btn{ display:inline-flex; align-items:center; gap:9px; padding:13px 22px; border-radius:999px; font-size:14px; font-weight:600; transition:transform .25s, background .25s, color .25s, border-color .25s; }
+  .btn-solid{ background:var(--rose); color:#fff; }
+  .btn-solid:hover{ background:var(--rose-deep); transform:translateY(-2px); }
+  .btn-ghost{ border:1.5px solid var(--rose-soft); color:var(--rose); }
+  .btn-ghost:hover{ background:var(--blush); transform:translateY(-2px); }
+  .about{ padding:clamp(46px,7vh,80px) 0; }
+  .about .wrap{ display:grid; grid-template-columns:300px 1fr; gap:54px; align-items:start; }
+  @media(max-width:820px){ .about .wrap{ grid-template-columns:1fr; gap:30px; } }
+  .about .photo-col{ position:sticky; top:90px; }
+  @media(max-width:820px){ .about .photo-col{ position:static; max-width:300px; } }
+  .about img.head{ width:100%; border-radius:18px; display:block; box-shadow:0 18px 44px rgba(121,53,72,.22); }
+  .about .label{ font-family:var(--serif); font-style:italic; font-size:20px; color:var(--rose); margin-bottom:14px; }
+  .about p{ font-size:17px; color:#3f3837; line-height:1.66; margin-bottom:15px; }
+  .about p.lead-line{ font-family:var(--serif); font-size:clamp(20px,2.6vw,26px); line-height:1.45; color:var(--ink); font-weight:500; }
+  .about em{ color:var(--rose); font-style:italic; }
+  .stats{ background:var(--ink); color:var(--cream); position:relative; z-index:1; }
+  .stats .wrap{ padding:62px 32px; }
+  .stats-head{ display:flex; flex-wrap:wrap; gap:10px 24px; align-items:baseline; justify-content:space-between; margin-bottom:40px; }
+  .stats-head h2{ font-family:var(--serif); font-weight:500; font-size:clamp(24px,3.4vw,34px); color:#fff; letter-spacing:-.01em; flex:1 1 360px; }
+  .stats-head h2 em{ color:var(--rose-soft); font-style:italic; }
+  .stats-head .src{ font-size:12.5px; color:#b69a9a; flex:0 1 320px; }
+  .grid-stats{ display:grid; grid-template-columns:repeat(4,1fr); gap:30px 26px; }
+  @media(max-width:820px){ .grid-stats{ grid-template-columns:repeat(2,1fr); } }
+  @media(max-width:430px){ .grid-stats{ grid-template-columns:1fr; } }
+  .stat .fig{ font-family:var(--serif); font-weight:500; font-size:clamp(40px,5.2vw,58px); line-height:1; color:#fff; }
+  .stat .fig span{ color:var(--rose-soft); }
+  .stat .lab{ margin-top:12px; font-size:13.5px; color:#cdb3b3; line-height:1.45; }
+  section{ padding:clamp(56px,8vh,100px) 0; }
+  .sec-head{ display:flex; align-items:baseline; gap:16px; margin-bottom:14px; }
+  .sec-head .num{ font-family:var(--serif); font-style:italic; color:var(--rose-soft); font-size:19px; }
+  .sec-head h2{ font-family:var(--serif); font-weight:600; font-size:clamp(28px,4.2vw,44px); letter-spacing:-.01em; }
+  .sec-intro{ max-width:60ch; color:#4d4443; font-size:16px; margin-bottom:44px; padding-left:35px; }
+  @media(max-width:600px){ .sec-intro{ padding-left:0; } }
+  .item{ display:grid; grid-template-columns:64px 1fr auto; gap:28px; align-items:start; padding:34px 0; border-top:1px solid var(--line); transition:padding-left .3s; }
+  .item:last-child{ border-bottom:1px solid var(--line); }
+  .item:hover{ padding-left:10px; }
+  .item .idx{ font-family:var(--serif); font-style:italic; font-size:22px; color:var(--rose-soft); padding-top:4px; }
+  .item h3{ font-family:var(--serif); font-weight:600; font-size:clamp(21px,2.7vw,27px); line-height:1.15; }
+  .item .tag{ display:inline-block; margin:11px 8px 0 0; font-size:11.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--rose); background:var(--blush); padding:5px 11px; border-radius:999px; }
+  .item p{ margin-top:15px; max-width:62ch; color:#453d3c; font-size:15.5px; line-height:1.64; }
+  .item .pull{ margin-top:16px; padding-left:16px; border-left:2px solid var(--rose-soft); font-family:var(--serif); font-style:italic; font-size:17px; color:var(--rose-deep); max-width:54ch; }
+  .item .out{ margin-top:13px; font-size:14px; color:var(--ink); }
+  .item .out b{ color:var(--rose); font-weight:600; }
+  .item .links{ margin-top:14px; display:flex; flex-wrap:wrap; gap:8px 18px; }
+  .item .links a{ font-size:13.5px; color:var(--rose); border-bottom:1px solid var(--rose-soft); padding-bottom:1px; transition:color .2s, border-color .2s; }
+  .item .links a:hover{ color:var(--rose-deep); border-color:var(--rose-deep); }
+  .item .links a::after{ content:" \2197"; font-size:11px; }
+  .item .meta{ text-align:right; font-size:12.5px; color:var(--muted); white-space:nowrap; padding-top:6px; }
+  @media(max-width:720px){ .item{ grid-template-columns:36px 1fr; } .item .meta{ grid-column:2; text-align:left; padding-top:0; margin-top:6px; } .item .idx{ font-size:17px; } }
+  .video{ background:var(--blush); position:relative; z-index:1; }
+  .video .wrap{ padding:clamp(56px,8vh,100px) 32px; }
+  .vid-label{ font-family:var(--serif); font-style:italic; font-size:19px; color:var(--rose); margin:34px 0 3px; }
+  .vid-label.first{ margin-top:40px; }
+  .vid-sub{ font-size:13.5px; color:var(--muted); margin-bottom:18px; }
+  .vid-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media(max-width:760px){ .vid-grid{ grid-template-columns:1fr; max-width:440px; } }
+  .vid-grid.two{ grid-template-columns:repeat(2,1fr); max-width:760px; }
+  @media(max-width:760px){ .vid-grid.two{ grid-template-columns:1fr; } }
+  .vid{ display:block; border-radius:14px; overflow:hidden; background:#1d1a19; box-shadow:0 14px 34px rgba(121,53,72,.16); transition:transform .3s, box-shadow .3s; }
+  .vid:hover{ transform:translateY(-4px); box-shadow:0 20px 44px rgba(121,53,72,.24); }
+  .vid .thumb{ position:relative; aspect-ratio:16/9; background:#1d1a19; }
+  .vid .thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .vid .badge{ position:absolute; top:11px; left:11px; z-index:2; font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:#fff; background:rgba(46,42,41,.6); padding:5px 10px; border-radius:999px; backdrop-filter:blur(4px); }
+  .vid .play{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; z-index:1; }
+  .vid .play span{ width:52px; height:52px; border-radius:50%; background:rgba(251,243,240,.94); display:flex; align-items:center; justify-content:center; box-shadow:0 4px 16px rgba(0,0,0,.25); }
+  .vid .play span::after{ content:""; border-left:15px solid var(--rose); border-top:9px solid transparent; border-bottom:9px solid transparent; margin-left:4px; }
+  .vid .cap{ background:var(--cream); padding:14px 16px; }
+  .vid .cap b{ display:block; font-size:14px; color:var(--ink); font-weight:600; line-height:1.3; }
+  .vid .cap small{ color:var(--muted); font-size:12px; }
+  .qrow{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:22px; }
+  @media(max-width:760px){ .qrow{ grid-template-columns:1fr; max-width:420px; } }
+  .qcard{ border-radius:14px; overflow:hidden; box-shadow:0 10px 28px rgba(121,53,72,.16); background:#5b4bbd; }
+  .qcard img{ width:100%; display:block; }
+  .photo-block{ margin-bottom:40px; }
+  .photo-head{ display:flex; align-items:baseline; gap:12px; margin-bottom:16px; }
+  .photo-head h3{ font-family:var(--serif); font-weight:600; font-size:22px; }
+  .photo-head span{ font-size:13px; color:var(--muted); }
+  .gal{ display:grid; gap:14px; grid-template-columns:2fr 1fr; grid-template-rows:1fr 1fr; height:520px; }
+  @media(max-width:680px){ .gal{ grid-template-columns:1fr; grid-template-rows:none; height:auto; } }
+  .gal a{ overflow:hidden; border-radius:12px; display:block; position:relative; }
+  .gal a:first-child{ grid-row:1 / span 2; }
+  @media(max-width:680px){ .gal a:first-child{ grid-row:auto; } .gal a{ aspect-ratio:3/2; } }
+  .gal img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease; }
+  .gal a:hover img{ transform:scale(1.05); }
+  .quotes{ background:var(--blush); position:relative; z-index:1; }
+  .quotes .wrap{ padding:clamp(56px,8vh,100px) 32px; }
+  .qgrid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:42px; }
+  @media(max-width:860px){ .qgrid{ grid-template-columns:1fr; max-width:620px; } }
+  .testi{ background:var(--cream); border-radius:16px; padding:28px 26px; box-shadow:0 10px 30px rgba(121,53,72,.10); display:flex; flex-direction:column; }
+  .testi .mark{ font-family:var(--serif); font-size:46px; line-height:.4; color:var(--rose-soft); height:26px; }
+  .testi p{ font-size:14.5px; color:#453d3c; line-height:1.6; margin-bottom:14px; }
+  .testi .who{ margin-top:auto; padding-top:14px; border-top:1px solid var(--line); }
+  .testi .who b{ display:block; font-size:14.5px; color:var(--ink); }
+  .testi .who small{ font-size:12.5px; color:var(--muted); }
+  .approach{ background:var(--ink); color:var(--cream); position:relative; z-index:1; }
+  .approach .wrap{ padding:clamp(60px,9vh,110px) 32px; }
+  .manifesto{ font-family:var(--serif); font-size:clamp(24px,4vw,42px); line-height:1.32; max-width:18ch; font-weight:500; letter-spacing:-.01em; color:#fff; }
+  .manifesto em{ font-style:italic; color:var(--rose-soft); }
+  .belief{ margin-top:28px; max-width:54ch; color:#d8c2c2; font-size:17px; line-height:1.6; }
+  .caps{ margin-top:56px; display:grid; grid-template-columns:repeat(3,1fr); gap:32px 40px; }
+  @media(max-width:760px){ .caps{ grid-template-columns:1fr; gap:24px; } }
+  .cap{ padding-top:18px; border-top:2px solid var(--rose-soft); }
+  .cap h4{ font-size:13px; letter-spacing:.09em; text-transform:uppercase; color:var(--rose-soft); margin-bottom:9px; font-weight:700; }
+  .cap p{ font-size:14.5px; color:#cdb3b3; line-height:1.58; }
+  .exp-row{ display:grid; grid-template-columns:150px 1fr; gap:30px; padding:26px 0; border-top:1px solid var(--line); }
+  .exp-row:last-child{ border-bottom:1px solid var(--line); }
+  .exp-row .when{ font-size:13.5px; color:var(--muted); padding-top:5px; }
+  .exp-row h3{ font-family:var(--serif); font-weight:600; font-size:21px; }
+  .exp-row .org{ color:var(--rose); font-size:14.5px; margin-top:2px; }
+  .exp-row p{ margin-top:9px; font-size:15px; color:#4d4443; max-width:64ch; }
+  @media(max-width:600px){ .exp-row{ grid-template-columns:1fr; gap:6px; } }
+  footer{ background:var(--ink); color:var(--cream); position:relative; z-index:1; border-top:1px solid #3d3331; }
+  footer .wrap{ padding:clamp(66px,10vh,116px) 32px; }
+  footer .big{ font-family:var(--serif); font-weight:500; font-size:clamp(32px,5.6vw,66px); line-height:1.05; letter-spacing:-.01em; }
+  footer .big em{ font-style:italic; color:var(--rose-soft); }
+  footer a.mail{ color:#fff; border-bottom:2px solid var(--rose-soft); }
+  footer a.mail:hover{ color:var(--rose-soft); }
+  .foot-row{ margin-top:46px; display:flex; flex-wrap:wrap; gap:14px 28px; align-items:center; font-size:14px; color:#cdb3b3; }
+  .foot-row a{ color:#e7d3d3; transition:color .2s; }
+  .foot-row a:hover{ color:#fff; }
+  .foot-sep{ color:#6c5557; }
+  .reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in{ opacity:1; transform:none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a href="#top" class="mono">Raisa Ahmed</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Writing</a>
+      <a href="#video">Podcast</a>
+      <a href="#photo">Photography</a>
+      <a href="#quotes">Praise</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<a id="top"></a>
+<header>
+  <div class="wrap">
+    <div class="hero-eyebrow reveal"><span class="dash"></span><span class="eyebrow">Content, Brand &amp; Editorial &middot; London</span></div>
+    <h1 class="reveal">I make sense<br>of <span class="it">complexity.</span></h1>
+    <p class="lede reveal">I'm a B2B content and brand marketer. I take messy information &mdash; research, data, customer conversations, what AI is saying about an industry &mdash; and turn it into things people can actually use. <b>The writing is the obvious part. The real work is deciding what deserves to be written at all.</b></p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-solid" href="mailto:raisa00ahmed@gmail.com">Get in touch</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/raisa-ahmed-a462391a4" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="Raisa_Ahmed_CV_1page.pdf" target="_blank" rel="noopener">View CV</a>
+    </div>
+  </div>
+</header>
+
+<div class="about" id="about">
+  <div class="wrap">
+    <div class="photo-col reveal">
+      <img class="head" src="assets/headshot.jpg" alt="Raisa Ahmed">
+    </div>
+    <div class="reveal">
+      <div class="label">About</div>
+      <p class="lead-line">I've always been drawn to the power of language &mdash; not just as a way to tell stories, but as the lens through which we understand the world.</p>
+      <p>Words can connect or divide, clarify or obscure. For me, writing has always been a way to make sense of that tension. It's how I've navigated education systems, built a voice online, and shaped narratives across my career.</p>
+      <p>With a First Class BA in American Literature and a Distinction in my Master's in Creative Writing from Royal Holloway, University of London, I bring that same precision and care to my role as Content Manager at YOOBIC. I lead content creation across social, product marketing and campaigns, and I'm currently reshaping our tone of voice to better reflect who we are and how we speak to the world. Before that, I managed social strategy at Papirfly, developed thought leadership content, and helped embed a new brand tone across global teams.</p>
+      <p>Outside of work, I use my platform to speak about education access and academic inequality, topics shaped by lived experience. I'm also writing a novel, slowly and deliberately, that explores the same themes that underpin much of my work: <em>language, identity, and who gets to be heard.</em></p>
+      <p>Whether I'm crafting B2B messaging or a personal essay, I write with one aim: to make things clearer, fairer, and more human.</p>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stats-head reveal">
+      <h2>I rebuilt YOOBIC's content to be the source <em>AI cites.</em></h2>
+      <p class="src">YOOBIC AEO performance, category-level prompts, US, mid-Mar to late-May 2026. Source: AirOps.</p>
+    </div>
+    <div class="grid-stats">
+      <div class="stat reveal"><div class="fig">~50<span>%</span></div><div class="lab">Share of voice in category AI answers</div></div>
+      <div class="stat reveal"><div class="fig">85<span>%</span></div><div class="lab">Share of voice on core task-management topics</div></div>
+      <div class="stat reveal"><div class="fig">3,517</div><div class="lab">AI citations earned by the flagship pillar alone</div></div>
+      <div class="stat reveal"><div class="fig">142</div><div class="lab">Owned pages cited across ChatGPT, Perplexity, Gemini &amp; Google AI Mode</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">01</span><h2>Writing</h2></div>
+    <p class="sec-intro reveal">Long-form editorial for senior retail operators. Every piece starts with one question &mdash; why should anyone care? &mdash; and is built problem-first, grounded in real numbers, with the stakes threaded all the way through.</p>
+    <div class="work">
+      <div class="item reveal">
+        <div class="idx">01</div>
+        <div>
+          <h3>Store visits are a revenue lever. Here's the data to prove it</h3>
+          <span class="tag">Long-form</span><span class="tag">Data storytelling</span>
+          <p>My flagship editorial for COOs and VPs of Retail, and the clearest example of how I write. It takes something most retailers treat as a routine compliance task and reframes it as a financial lever, built on hard numbers rather than assertion. Declarative, causal, and commercial from the first line.</p>
+          <div class="links"><a href="https://yoobic.com/blog/store-visit-roi/" target="_blank" rel="noopener">Read the piece</a></div>
+        </div>
+        <div class="meta">YOOBIC<br>2026</div>
+      </div>
+      <div class="item reveal">
+        <div class="idx">02</div>
+        <div>
+          <h3>Retail task management: the pillar</h3>
+          <span class="tag">Pillar</span><span class="tag">Topical authority</span>
+          <p>The cornerstone of the cluster, and the single most-cited page across everything YOOBIC publishes. It's deliberately the most useful, most complete answer on the topic anywhere, structured so both a busy operator and a language model can find exactly what they need.</p>
+          <p class="out"><b>3,517</b> AI citations &middot; 17.7% of all citations to YOOBIC.</p>
+          <div class="links"><a href="https://yoobic.com/blog/retail-task-management/" target="_blank" rel="noopener">Read the pillar</a></div>
+        </div>
+        <div class="meta">YOOBIC<br>2025&ndash;26</div>
+      </div>
+      <div class="item reveal">
+        <div class="idx">03</div>
+        <div>
+          <h3>The retail communication guide</h3>
+          <span class="tag">Pillar</span><span class="tag">SEO + GEO</span>
+          <p>A second cluster, a second top-cited pillar. Same approach as the task management work: the most complete, most genuinely useful answer on frontline communication anywhere, which is exactly why AI engines reach for it.</p>
+          <p class="out"><b>1,107</b> AI citations &middot; one of YOOBIC's five most-cited pages.</p>
+          <div class="links"><a href="https://yoobic.com/blog/retail-communication-guide/" target="_blank" rel="noopener">Read the guide</a></div>
+        </div>
+        <div class="meta">YOOBIC<br>2025&ndash;26</div>
+      </div>
+      <div class="item reveal">
+        <div class="idx">04</div>
+        <div>
+          <h3>Why retail employees quit in their first year</h3>
+          <span class="tag">Editorial</span><span class="tag">Workplace culture</span>
+          <p>The piece where the sociology shows. It reads turnover not as a pay problem but as a question of how the job <em>feels</em> in the first weeks: expectation mismatch, sink-or-swim onboarding, invisible career paths. Human first, evidence throughout.</p>
+          <div class="links"><a href="https://yoobic.com/blog/why-retail-employees-quit-first-year/" target="_blank" rel="noopener">Read the piece</a></div>
+        </div>
+        <div class="meta">YOOBIC<br>2026</div>
+      </div>
+      <div class="item reveal">
+        <div class="idx">05</div>
+        <div>
+          <h3>The brand's voice, written down</h3>
+          <span class="tag">Brand</span><span class="tag">Tone of voice</span>
+          <p>I was Tone of Voice Lead on YOOBIC's 2025 Brand Refinement programme, authoring the company's first Tone of Voice Guidelines and editorial standards. Defining how a company should sound across hundreds of future pieces is quietly one of the hardest things I've done. It isn't the most visible work. It lasts the longest.</p>
+          <p class="pull">I'm proud of the measurable wins. I'm just as proud of the things that create structure where none existed before.</p>
+          <div class="links"><a href="https://youtu.be/GSNDLJF8ozM" target="_blank" rel="noopener">Watch the rebrand announcement (team project)</a></div>
+        </div>
+        <div class="meta">YOOBIC<br>2025</div>
+      </div>
+      <div class="item reveal">
+        <div class="idx">06</div>
+        <div>
+          <h3>Papirfly's brand voice &amp; hub</h3>
+          <span class="tag">Brand</span><span class="tag">Tone of voice</span><span class="tag">Wireframe</span>
+          <p>Before YOOBIC, I owned the entire tone of voice and built the page wireframe for Papirfly's brand hub, and led a company-wide voice repositioning in my first three months. LinkedIn engagement rose <b>133%</b> in the first quarter.</p>
+          <div class="links"><a href="https://brand.papirfly.com/point/en/papirflybrand/component/default/197983" target="_blank" rel="noopener">View the brand hub</a></div>
+        </div>
+        <div class="meta">Papirfly<br>2024&ndash;25</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="video" id="video">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">02</span><h2>Podcast &amp; video</h2></div>
+    <p class="sec-intro reveal">I produce Frontline Fridays, YOOBIC's weekly podcast, end to end: booking and prepping guests, recording, editing, publishing across YouTube and the website, and building the promotional system around each episode.</p>
+
+    <div class="vid-label first reveal">Frontline Fridays &middot; selected episodes</div>
+    <div class="vid-sub reveal">Produced and published end to end.</div>
+    <div class="vid-grid">
+      <a class="vid reveal" href="https://www.youtube.com/watch?v=5wKGZUeHSRk&list=PLrohqoj-V_gskdgonZVHPSVNYO0K2mtpO" target="_blank" rel="noopener">
+        <div class="thumb"><span class="badge">S2 E08</span><img src="assets/ff-fabrice.jpg" alt="Fabrice Haiat episode"><div class="play"><span></span></div></div>
+        <div class="cap"><b>AI for Frontline Teams is Changing How Stores Run</b><small>with Fabrice Haiat, CEO of YOOBIC</small></div>
+      </a>
+      <a class="vid reveal" href="https://www.youtube.com/watch?v=tytDot4SDwY" target="_blank" rel="noopener">
+        <div class="thumb"><span class="badge">S2 E07</span><img src="assets/ff-steve.jpg" alt="Steve Worthy episode"><div class="play"><span></span></div></div>
+        <div class="cap"><b>What 600 Retail Leaders Need But Aren't Getting</b><small>with Steve Worthy, Worthy Retail</small></div>
+      </a>
+      <a class="vid reveal" href="https://www.youtube.com/watch?v=iCn0pteqwBQ" target="_blank" rel="noopener">
+        <div class="thumb"><span class="badge">S2</span><img src="assets/ff-david.jpg" alt="David Dawson episode"><div class="play"><span></span></div></div>
+        <div class="cap"><b>What 900 Travel Centers Teach You About Frontline Tech</b><small>with David Dawson, Pilot Company</small></div>
+      </a>
+    </div>
+
+    <div class="vid-label reveal">The promotional system I build around each episode</div>
+    <div class="vid-sub reveal">Branded quote cards I design to carry each conversation across social. These three are from the Fabrice Haiat episode.</div>
+    <div class="qrow">
+      <div class="qcard reveal"><img src="assets/quote-fabrice-1.jpg" alt="Quote card: the store is a war zone"></div>
+      <div class="qcard reveal"><img src="assets/quote-fabrice-2.jpg" alt="Quote card: AI is the fastest ROI ever for the frontline"></div>
+      <div class="qcard reveal"><img src="assets/quote-ron.jpg" alt="Quote card: you wear every hat"></div>
+    </div>
+
+    <div class="vid-label reveal">Video essays &middot; written, shot &amp; cut by me</div>
+    <div class="vid-sub reveal">Personal work where the literature-and-sociology thread shows. Researched, scripted, and edited end to end &mdash; the same interpretation work, in a different medium. Full essays live on my Substack.</div>
+    <div class="vid-grid two">
+      <a class="vid reveal" href="https://youtu.be/BKmG8THNZQA" target="_blank" rel="noopener">
+        <div class="thumb"><span class="badge">Video essay</span><img src="assets/essay-lolita.jpg" alt="How Pop Culture Erased Lolita"><div class="play"><span></span></div></div>
+        <div class="cap"><b>How Pop Culture Erased Lolita</b><small>On Nabokov, unreliable narration &amp; the aesthetic of abuse</small></div>
+      </a>
+      <a class="vid reveal" href="https://youtu.be/7ESf-C2sSl4" target="_blank" rel="noopener">
+        <div class="thumb"><span class="badge">Video essay</span><img src="assets/essay-vernacular.jpg" alt="Why We Code-Switch"><div class="play"><span></span></div></div>
+        <div class="cap"><b>Why We Code-Switch</b><small>On language, power &amp; the cost of "proper" English</small></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<section id="photo">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">03</span><h2>Photography</h2></div>
+    <p class="sec-intro reveal">I'm YOOBIC's event photographer. It isn't a hobby bolted on, it's evidence of how I work. I'm drawn to visual storytelling as much as written, and comfortable being the person who both shapes the message and captures it.</p>
+
+    <div class="photo-block reveal">
+      <div class="photo-head"><h3>Retail Technology Show 2026</h3><span>ExCeL London</span></div>
+      <div class="gal">
+        <a href="assets/rts-1.jpg" target="_blank" rel="noopener"><img src="assets/rts-1.jpg" alt="YOOBIC booth at RTS 2026"></a>
+        <a href="assets/rts-2.jpg" target="_blank" rel="noopener"><img src="assets/rts-2.jpg" alt="Spotlight Stage at RTS 2026"></a>
+        <a href="assets/rts-3.jpg" target="_blank" rel="noopener"><img src="assets/rts-3.jpg" alt="Through-the-lens stage shot at RTS 2026"></a>
+      </div>
+    </div>
+
+    <div class="photo-block reveal">
+      <div class="photo-head"><h3>NRF 2026 &middot; Retail's Big Show</h3><span>New York</span></div>
+      <div class="gal">
+        <a href="assets/nrf-1.jpg" target="_blank" rel="noopener"><img src="assets/nrf-1.jpg" alt="Retail's Ride or Die at NRF 2026"></a>
+        <a href="assets/nrf-2.jpg" target="_blank" rel="noopener"><img src="assets/nrf-2.jpg" alt="Networking at the YOOBIC booth, NRF 2026"></a>
+        <a href="assets/nrf-3.jpg" target="_blank" rel="noopener"><img src="assets/nrf-3.jpg" alt="Through-the-lens stage shot at NRF 2026"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="quotes" id="quotes">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">04</span><h2>What people say</h2></div>
+    <div class="qgrid">
+      <div class="testi reveal">
+        <div class="mark">&ldquo;</div>
+        <p>A true storyteller. Raisa has delivered outstanding results in shaping Papirfly's strategic narrative across social media, and was the driving force behind rolling out a new Tone of Voice and defining how we stand out from competitors. She's an all-round creative and a superb team player who excels in everything she takes on.</p>
+        <div class="who"><b>Craig Malpass</b><small>Head of Content &amp; Senior Copywriter, Papirfly &middot; managed Raisa directly</small></div>
+      </div>
+      <div class="testi reveal">
+        <div class="mark">&ldquo;</div>
+        <p>An exceptional Social Media Manager who transformed our brand's online presence with creativity and strategic insight. Her talent for balancing linguistic excellence, creativity and data-driven strategies elevated our social performance to new heights. A valuable asset to any marketing team, consistently delivering results that exceed expectations.</p>
+        <div class="who"><b>Beccy Primrose Furness</b><small>VP Marketing, Papirfly</small></div>
+      </div>
+      <div class="testi reveal">
+        <div class="mark">&ldquo;</div>
+        <p>Raisa puts her passion into every project. She used her considerable writing and video creator talents to shape messaging that landed with the audiences we were trying to reach &mdash; some of it became the most popular content we'd seen. If you're looking for an exceptional candidate, I assure you Raisa will bring knowledge, passion and creativity to your organisation.</p>
+        <div class="who"><b>Jennifer M. Mathews, M.F.A.</b><small>Education Consulting &amp; Leadership, BridgeU &middot; managed Raisa directly</small></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="approach" id="approach">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">05</span><h2 style="color:#fff">How I work</h2></div>
+    <p class="manifesto reveal">Most content fails because nobody answered one question: <em>why should anyone care?</em></p>
+    <p class="belief reveal">Too many companies start with what they want to say instead of what their audience needs. I start with the problem: why this matters, who it matters to, and what someone gains from reading. At its best, content isn't broadcasting. It's helping someone make sense of something.</p>
+    <div class="caps">
+      <div class="cap reveal"><h4>Research first</h4><p>Reports, competitors, customer conversations, search, AI outputs. I'm happiest handed something messy and asked to find the thing that matters.</p></div>
+      <div class="cap reveal"><h4>SEO &amp; GEO/AEO</h4><p>I treat AI visibility as an editorial challenge, not a trick. Become the most useful source available, structured clearly, and the citations follow.</p></div>
+      <div class="cap reveal"><h4>Brand &amp; editorial</h4><p>Tone of voice and messaging systems, editorial standards, and a high bar on everything that ships. Problem-first, no filler.</p></div>
+      <div class="cap reveal"><h4>Data storytelling</h4><p>Turning numbers into a narrative a senior operator will act on. Evidence as the backbone, not decoration.</p></div>
+      <div class="cap reveal"><h4>Multimedia</h4><p>Writing, photography, video, podcast. Not attached to one medium, attached to telling the story well.</p></div>
+      <div class="cap reveal"><h4>Building from scratch</h4><p>Content strategies, publication processes, voice frameworks, new approaches to AI visibility. I like creating structure where none existed.</p></div>
+    </div>
+  </div>
+</div>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">06</span><h2>Experience</h2></div>
+    <div class="reveal" style="margin-top:20px;">
+      <div class="exp-row"><div class="when">2025&ndash;Present</div><div><h3>Content Manager</h3><div class="org">YOOBIC &middot; B2B SaaS, AI frontline retail operations</div><p>Brand and messaging strategy, SEO and GEO, long-form editorial, social, podcast, photography, and sales enablement, across marketing, product, sales, and leadership.</p></div></div>
+      <div class="exp-row"><div class="when">2024&ndash;2025</div><div><h3>Social Media Manager &amp; Writer</h3><div class="org">Papirfly &middot; B2B SaaS, Digital Asset Management</div><p>Owned tone of voice and brand hub wireframe, led a company-wide voice repositioning, and grew LinkedIn engagement 133% in a quarter.</p></div></div>
+      <div class="exp-row"><div class="when">2023&ndash;2024</div><div><h3>Content Coordinator</h3><div class="org">BridgeU / Kaplan &middot; EdTech</div><p>Global content campaigns and the platform's first interactive content, +300% engagement, across 140+ countries.</p></div></div>
+      <div class="exp-row"><div class="when">2021&ndash;2023</div><div><h3>Junior Content Specialist</h3><div class="org">Cuvva &middot; InsureTech</div><p>Help, blog, and in-app copy for a digital-native audience, shaped by customer data and SEO.</p></div></div>
+      <div class="exp-row"><div class="when">2020&ndash;2021</div><div><h3>Academic Publishing Intern</h3><div class="org">Bloomsbury Publishing</div><p>Supported the academic books publication process with authors, editors, and production teams.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow" style="color:var(--rose-soft)">Let's talk</p>
+      <p class="big" style="margin-top:18px;">Got something messy<br>that needs <em>making<br>sense of?</em></p>
+      <p class="big" style="font-size:clamp(20px,3vw,30px); margin-top:30px;"><a class="mail" href="mailto:raisa00ahmed@gmail.com">raisa00ahmed@gmail.com</a></p>
+      <div class="foot-row">
+        <a href="https://linkedin.com/in/raisa-ahmed-a462391a4" target="_blank" rel="noopener">LinkedIn</a><span class="foot-sep">/</span>
+        <a href="https://raisa00ahmed.substack.com" target="_blank" rel="noopener">Substack</a><span class="foot-sep">/</span>
+        <a href="Raisa_Ahmed_CV_1page.pdf" target="_blank" rel="noopener">Download CV</a><span class="foot-sep">/</span>
+        <span>London, UK</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{ entries.forEach((e)=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); },{ threshold:.1, rootMargin:"0px 0px -6% 0px" });
+  document.querySelectorAll('.reveal').forEach((el,i)=>{ el.style.transitionDelay = (Math.min(i,5)*55) + 'ms'; io.observe(el); });
+</script>
+</body>
+</html>
